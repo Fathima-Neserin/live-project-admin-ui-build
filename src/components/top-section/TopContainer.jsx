@@ -35,7 +35,7 @@ function TopContainer() {
           <LineChart />
         </div>
       </div>
-      <div className="w-[40%] h-full  px-5  flex gap-5 flex-col items-start justify-center ">
+      <div className="w-[42%] h-full  px-5  flex gap-5 flex-col items-start justify-center ">
         <h1 className="font-semibold">Statistics</h1>
         <div className="w-full h-4/5 bg-standard rounded-2xl grid place-items-center">
           <PieChart />

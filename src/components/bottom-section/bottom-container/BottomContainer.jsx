@@ -6,8 +6,8 @@ import { BlockedUsersCard } from "../../index";
 function BottomContainer() {
   return (
     <div className="w-full h-full  grid place-items-center">
-      <div className="w-[90%]  h-full flex gap-5">
-        <div className="w-[60%] h-[90%] bg-standard rounded-xl flex flex-col items-center">
+      <div className="w-[90%]  h-full flex gap-5 items-center justify-start">
+        <div className="w-[72%] h-[90%] bg-standard rounded-xl flex flex-col items-center">
           <div className="w-[90%] h-20  flex items-center justify-between">
             <h1 className="text-2xl font-bold">Income & Expenses</h1>
             <Settings className="cursor-pointer" />
@@ -35,7 +35,7 @@ function BottomContainer() {
             </p>
           </div>
         </div>
-        <div className="w-[37%] h-[90%]  ">
+        <div className="w-[25%] h-[90%]  ">
           <div className="w-[90%] h-[4.5rem]  flex items-center justify-between">
             <h1 className=" font-bold">Blocked users</h1>
             <p className="text-sm opacity-60">see more</p>
