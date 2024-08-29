@@ -4,12 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { SideBar } from "./components";
 import ErrorScreen from "./screens/error-screen/ErrorScreen";
 import MainScreenLayout from "./screens/admin/MainScreenLayout";
-import { MainScreen, NotificationScreen, SubscriptionScreen } from "./screens/child-screens";
+import { MainScreen, NotificationScreen, NotificationSettingsScreen, SubscriptionScreen } from "./screens/child-screens";
 
 function App() {
   const router = createBrowserRouter([
     {
-      path:"/admin",
+      path:"/",
       element: <MainScreenLayout />,
       errorElement: <ErrorScreen />,
       children:[
@@ -24,6 +24,10 @@ function App() {
         {
           path: "notification",
           element: <NotificationScreen />
+        },
+        {
+          path: "notification/settings",
+          element: <NotificationSettingsScreen />
         }
       ]
     }

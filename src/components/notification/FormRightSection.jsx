@@ -39,7 +39,7 @@ function FormRightSection() {
           ))}
         </div>
       </div>
-      <div className=" my-10 flex justify-center">
+      <div className="mt-10 flex justify-center">
         <button className="w-full md:w-[70%] py-4 bg-[#04228E] text-white text-lg">
           Update
         </button>
