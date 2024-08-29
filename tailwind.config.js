@@ -7,6 +7,7 @@ export default {
         primary: "#F0F6FF;",
         highlight: "#6F4FF2",
         standard: "#FFFFFF",
+        customOrange: "#FF5400",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

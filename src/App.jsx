@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { SideBar } from "./components";
 import ErrorScreen from "./screens/error-screen/ErrorScreen";
 import MainScreenLayout from "./screens/admin/MainScreenLayout";
-import { MainScreen, SubscriptionScreen } from "./screens/child-screens";
+import { MainScreen, NotificationScreen, SubscriptionScreen } from "./screens/child-screens";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,6 +20,10 @@ function App() {
         {
           path:"subscription",
           element: <SubscriptionScreen />
+        },
+        {
+          path: "notification",
+          element: <NotificationScreen />
         }
       ]
     }
