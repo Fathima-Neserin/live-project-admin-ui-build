@@ -7,6 +7,9 @@ import UserManagementScreen from "./screens/user-management-screen/UserManagemen
 import UserProfileScreen from "./screens/user-profile-screen/UserProfileScreen";
 import MainScreen from "./screens/main-screen/MainScreen";
 import EditProfileScreen from "./screens/edit-profile-screen/EditProfileScreen";
+import SubscriptionScreen from "./screens/child-screens/SubscriptionScreen";
+import NotificationScreen from "./screens/child-screens/NotificationScreen";
+import NotificationSettingsScreen from "./screens/child-screens/NotificationSettingsScreen";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/admin/profile" element={<EditProfileScreen />} />
         <Route path="/admin/users" element={<UserManagementScreen />} />
         <Route path="/admin/users/profile" element={<UserProfileScreen />} />
+        <Route path="/admin/subscription" element={<SubscriptionScreen/>}/>
+        <Route path="/admin/notification" element={<NotificationScreen/>}/>
+        <Route path="/admin/notification/settings" element={<NotificationSettingsScreen/>}/>
       </Routes>
     </div>
   );
